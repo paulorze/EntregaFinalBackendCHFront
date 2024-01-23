@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material';
 import { useState } from "react";
 import { uploadDocumentsUser } from "../../services/users.service";
 import { openToast } from "../../redux/handleToastSlice";
+import { openToastError } from "../../redux/handleToastErrorSlice";
 
 const ProfileContainer = () => {
     const theme = useTheme();
