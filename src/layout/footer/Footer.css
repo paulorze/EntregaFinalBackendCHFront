@@ -1,0 +1,22 @@
+footer { 
+    height: fit-content;
+}
+
+.footer__ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__ul__link {
+    padding: 1.5rem .5rem .25rem ;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__ul__link:hover {
+    border-bottom: 2px solid white;
+}

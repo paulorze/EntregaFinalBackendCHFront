@@ -1,0 +1,22 @@
+.checkout__form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout__botones {
+    width: 70vw;
+    max-width: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkout__cart {
+    border: 1px solid grey;
+    border-radius: 4px;
+    height: fit-content;
+}

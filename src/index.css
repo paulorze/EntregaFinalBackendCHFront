@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main, aside {
+  min-height: calc(100vh - 384px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#logoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.previewImg {
+  width: 100%;
+}
