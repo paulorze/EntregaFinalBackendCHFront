@@ -30,7 +30,7 @@ const LoginContainer = () => {
                 const res = await signIn(data);
                 const decodedJwt = jwtDecode(res);
                 dispatcher(setUser({_id: decodedJwt.user._id, username: decodedJwt.user.username, email: decodedJwt.user.email, role: decodedJwt.user.role, documents: decodedJwt.user?.documents ? decodedJwt.user.documents : [], jwt : res}));
-                document.cookie = `session=${res}; expires=3600; secure;`;
+                document.cookie = `session=${res}; expires=3600; samesite=None; secure; domain=entregafinalbackendchback-production.up.railway.app`;
                 const cart = await getCart();
                 dispatcher(cartClean());
                 cart.products.forEach(product => {

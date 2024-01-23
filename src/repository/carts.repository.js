@@ -6,7 +6,7 @@ export const getCartRepository = async () => {
         const res = await axios.get(
             `${url}/api/carts`, 
             {
-                withCredentials: true,
+                withCredentials: true
             }
         );
         return res;
@@ -21,7 +21,7 @@ export const addProductToCartRepository = async (data) => {
             `${url}/api/carts/addProduct`, 
             data,
             {
-                withCredentials: true,
+                withCredentials: true
             }
         );
         return res;
