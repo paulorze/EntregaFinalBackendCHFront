@@ -12,6 +12,7 @@ export const getCartRepository = async () => {
           }
       
           const data = await response.json();  // Assuming a JSON response
+          console.log(data)
           return data;
         // const res = await axios.get(
         //     `${url}/api/carts`, 
