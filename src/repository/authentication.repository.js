@@ -3,7 +3,13 @@ const url = import.meta.env.VITE_BACKEND_URL;
 
 export const signInRepository = async (data) => {
     try {
-        const res = await axios.post(`${url}/api/users/login`, data);
+        const res = await axios.post(
+            `${url}/api/users/login`,
+            data,
+            {
+                withCredentials: true
+            }
+        );
         return res;
     } catch (e) {
         throw e;
