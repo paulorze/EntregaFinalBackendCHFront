@@ -30,7 +30,7 @@ const CheckoutPaymentContainer = ({handlePrevStep, handleLastStep}) => {
                 const res = await endPurchase();
                 handleSetOrderID(res.result._id);
                 dispatcher(openToast());
-                dispatcher(cartClean);
+                dispatcher(cartClean());
                 setTimeout(() => {
                     setLoading(prevData=>false);
                     handleLastStep();
