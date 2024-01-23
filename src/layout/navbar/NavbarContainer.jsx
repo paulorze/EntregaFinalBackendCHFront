@@ -15,7 +15,7 @@ const NavbarContainer = ()=> {
     const adminKey = import.meta.env.VITE_ADMIN_KEY;
     const dispatcher = useDispatch();
 
-    // ESTO CORRESPONDE AL MENU RESPONSIVO DESPLEGABLE
+    // ESTO CORRESPONDE AL MENU RESPONSIVODESPLEGABLE
     const [anchorElNav, setAnchorElNav] = useState(null);
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
